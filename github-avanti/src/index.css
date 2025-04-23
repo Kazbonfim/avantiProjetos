@@ -91,10 +91,19 @@ body {
   padding: 1.5rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 700px;
-  height: 260px;
+  max-width: 50rem;
+  height: 16rem;
+  max-height: 30rem;
   color: #212529;
   text-align: start;
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
 }
 
 .profile-avatar {
@@ -103,6 +112,14 @@ body {
   border-radius: 100%;
   user-select: none;
   transition: transform 0.8s ease;
+}
+
+@media (max-width: 768px) {
+  .profile-avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .profile-avatar:hover {
