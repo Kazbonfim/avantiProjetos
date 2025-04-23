@@ -1,0 +1,215 @@
+/* === Variáveis === */
+:root {
+    --font-family: 'Nunito Sans', Helvetica, sans-serif;
+    --grey-color: #dedede;
+    --dark-grey: grey;
+    --black-color: black;
+    --blue-color: #007bff;
+    --card-width: 8rem;
+    --card-height: 8rem;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --transition-time: 0.3s;
+    --transition-ease: ease-out;
+    --border-radius: 10%;
+    --icon-size: 90px;
+    --icon-background: rgb(0, 92, 255);
+    --icon-inner-size: 45px;
+    --text-font-size: 1rem;
+    --text-color: #000;
+}
+
+/* === Reset e base === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+}
+
+a,
+a:visited {
+    color: var(--dark-grey);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--black-color);
+}
+
+/* === Utilitários === */
+.greyBackground {
+    background-color: var(--grey-color);
+}
+
+/* === Banner === */
+.banner img {
+    width: 100%;
+}
+
+.bannerText {
+    display: inline-block;
+    text-shadow: 3px 3px 8px rgba(255, 255, 255, 1);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.bannerText:hover {
+    transform: scale(1.1);
+}
+
+/* === Botões com hover === */
+.btnHover {
+    width: 30px;
+    height: 30px;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform var(--transition-time) var(--transition-ease), box-shadow var(--transition-time) var(--transition-ease);
+    user-select: none;
+}
+
+.btnHover:hover {
+    transform: scale(1.15);
+}
+
+.imgHover {
+    opacity: 0.8;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform var(--transition-time) var(--transition-ease);
+    display: block;
+    user-select: none;
+}
+
+.imgHover:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* === Card de produto === */
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: transform var(--transition-time) var(--transition-ease), box-shadow var(--transition-time) var(--transition-ease);
+}
+
+.card img {
+    transition: transform var(--transition-time) var(--transition-ease);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .text-scroll {
+        max-height: 400px;
+        overflow-y: auto;
+        font-size: 0.9rem;
+    }
+}
+
+/* === Carrossel de produtos === */
+#carouselProdutos {
+    position: relative;
+}
+
+.custom-carousel-btn {
+    margin: -2rem;
+}
+
+.carousel-control-prev {
+    left: -20px;
+}
+
+.carousel-control-next {
+    right: -20px;
+}
+
+.custom-arrow {
+    width: 16px;
+    height: 16px;
+}
+
+.card-custom {
+    width: 10rem;
+}
+
+@media (max-width: 576px) {
+    .card-custom {
+        width: 100%;
+    }
+}
+
+/* === Seção com produto e descrição === */
+.prod-banner {
+    padding: 0;
+}
+
+.prod-photo img {
+    background-color: var(--grey-color);
+}
+
+.prod-description {
+    max-width: 40rem;
+    padding: 2rem;
+}
+
+/* === Ícones com informações === */
+.icon-circle {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    background-color: var(--icon-background);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.icon {
+    width: var(--icon-inner-size);
+    height: var(--icon-inner-size);
+    object-fit: contain;
+}
+
+.info-text {
+    font-size: var(--text-font-size);
+    color: var(--text-color);
+}
+
+/* === Responsividade === */
+@media (max-width: 576px) {
+    .info-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon-circle {
+        margin-bottom: 1rem;
+    }
+}
+
+/* === Banner com chamada === */
+.banner-strip {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    background-color: var(--blue-color);
+    color: white;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    z-index: 2;
+}

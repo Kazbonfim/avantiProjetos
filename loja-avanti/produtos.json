@@ -1,0 +1,92 @@
+[
+    {
+        "title": "Produto 1",
+        "oldPrice": "R$100,00",
+        "price": "R$79,90",
+        "parcel": "10x de R$ 7,90",
+        "discount": "10% OFF",
+        "img": "./assets/product1.png",
+        "badge": "NOVO"
+    },
+    {
+        "title": "Produto 2",
+        "oldPrice": "R$100,00",
+        "price": "R$79,90",
+        "parcel": "10x de R$ 7,90",
+        "discount": "10% OFF",
+        "img": "./assets/product1.png",
+        "badge": "NOVO"
+    },
+    {
+        "title": "Produto 3",
+        "oldPrice": "R$100,00",
+        "price": "R$79,90",
+        "parcel": "10x de R$ 7,90",
+        "discount": "10% OFF",
+        "img": "./assets/product1.png",
+        "badge": "NOVO"
+    },
+    {
+        "title": "Produto 4",
+        "oldPrice": "R$100,00",
+        "price": "R$79,90",
+        "parcel": "10x de R$ 7,90",
+        "discount": "10% OFF",
+        "img": "./assets/product1.png",
+        "badge": "NOVO"
+    },
+    {
+        "title": "Produto 5",
+        "oldPrice": "R$100,00",
+        "price": "R$79,90",
+        "parcel": "10x de R$ 7,90",
+        "discount": "10% OFF",
+        "img": "./assets/product1.png",
+        "badge": "NOVO"
+    },
+    {
+        "title": "Produto 6",
+        "oldPrice": "R$100,00",
+        "price": "R$79,90",
+        "parcel": "10x de R$ 7,90",
+        "discount": "10% OFF",
+        "img": "./assets/product1.png",
+        "badge": "NOVO"
+    },
+    {
+        "title": "Produto 7",
+        "oldPrice": "R$100,00",
+        "price": "R$79,90",
+        "parcel": "10x de R$ 7,90",
+        "discount": "10% OFF",
+        "img": "./assets/product1.png",
+        "badge": "NOVO"
+    },
+    {
+        "title": "Produto 8",
+        "oldPrice": "R$100,00",
+        "price": "R$79,90",
+        "parcel": "10x de R$ 7,90",
+        "discount": "10% OFF",
+        "img": "./assets/product1.png",
+        "badge": "NOVO"
+    },
+    {
+        "title": "Produto 9",
+        "oldPrice": "R$100,00",
+        "price": "R$79,90",
+        "parcel": "10x de R$ 7,90",
+        "discount": "10% OFF",
+        "img": "./assets/product1.png",
+        "badge": "NOVO"
+    },
+    {
+        "title": "Produto 10",
+        "oldPrice": "R$100,00",
+        "price": "R$79,90",
+        "parcel": "10x de R$ 7,90",
+        "discount": "10% OFF",
+        "img": "./assets/product1.png",
+        "badge": "NOVO"
+    }
+]
