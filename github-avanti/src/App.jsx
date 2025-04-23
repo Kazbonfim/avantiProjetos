@@ -14,7 +14,7 @@ const App = () => {
       setError(null)
     } catch {
       setUserData(null)
-      setError(`Usuário "${username}" não encontrado`)
+      setError(`Usuário "${username}" não encontrado 🤔`)
     }
   }
 
@@ -29,7 +29,13 @@ const App = () => {
             className="logo"
             draggable="false"
           />
-          <h1 className="mb-0">Perfil/<span>Github</span></h1>
+          <h1 className="my-3 display-3">Perfil/<span>Github</span></h1>
+        </div>
+
+        <div className='container'>
+          <p className='lead'>
+            Um buscador simples, feito com React, e Axios, para buscar perfis direto da API do Github!
+          </p>
         </div>
 
         {/* Campo de busca */}
@@ -53,7 +59,7 @@ const App = () => {
         </div>
 
         {/* Erro */}
-        {error && <p className="text-danger">{error}</p>}
+        {error && <p className="text-danger display-5">{error}</p>}
 
         {/* Resultado */}
         {userData && (

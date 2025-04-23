@@ -15,6 +15,20 @@ body {
   overflow: hidden;
 }
 
+@keyframes pulseBackground {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 0.3;
+  }
+}
+
 .background-effects::before,
 .background-effects::after {
   content: '';
@@ -25,6 +39,7 @@ body {
   background: radial-gradient(circle, rgba(0, 123, 255, 0.5) 0%, transparent 70%);
   z-index: -1;
   filter: blur(60px);
+  animation: pulseBackground 5s ease-in-out infinite;
 }
 
 .background-effects::before {
