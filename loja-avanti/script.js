@@ -21,7 +21,6 @@ if (menuList.length > menuIndex) {
 menuList.slice(0, menuIndex).forEach(item => {
   const menuItem = document.createElement('li');
   menuItem.className = 'nav-item';
-  // Adicionando a classe d-none d-md-block para esconder no mobile
   menuItem.innerHTML = `<a class="nav-link active d-none d-md-block" href="#">${item}</a>`;
   menuContainer.appendChild(menuItem);
 });
@@ -32,7 +31,7 @@ function promoBtn(msg) {
 }
 
 // Renderização dos produtos no Carrosel
-axios.get('./produtos.json') // caminho do seu JSON local
+axios.get('./produtos.json')
   .then(response => {
     const cards = response.data;
     const carouselContent = document.getElementById("carouselContent");
